@@ -106,7 +106,7 @@ function getData() {
     let arrayData = JSON.parse(retrievedData);
     // each object doesn't has access to render method
     if (arrayData != null) {
-        for (let i = 1; i < (arrayData.length)-allDrinks.length; i++) {
+        for (let i = 4; i < arrayData.length; i++) {
             // reinstantiation: re creating instance
             new Drink(arrayData[i].name, arrayData[i].ingredients, arrayData[i].image, arrayData[i].isCol, arrayData[i].isHot, arrayData[i].price);
         }
